@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大家的音樂小教室 | 樂理小幫手</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .container {
+            border: 10px;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column h-100 bg-light">
+    <main class="flex-shrink-0">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #9E7A7A;">
+            <div class="container-fluid">
+                <a class="navbar-brand text-warning" href="dashboard.html"><img src="images/bookcover.png" alt="">
+                    大家的音樂小教室 <i class="bi bi-music-note-list"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">關於我們</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="product-list.html" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                音樂家小故事
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="product-list.html">巴赫 Bach</a></li>
+                                <li><a class="dropdown-item" href="product-list.html">莫札特 Mozart</a></li>
+                                <li><a class="dropdown-item" href="product-list.html">貝多芬 Beethoven</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="product.html" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                樂理小幫手
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="product.html">譜表 Staffe</a></li>
+                                <li><a class="dropdown-item" href="product.html">音符 Note</a></li>
+                                <li><a class="dropdown-item" href="product.html">譜號 Clef</a></li>
+                                <li><a class="dropdown-item" href="product.html">拍號 Time Signature</a></li>
+                                <li><a class="dropdown-item" href="product.html">音名 Pitch Name、 唱名 Solfege</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="store.html">門市店鋪</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">常見問題</a>
+                        </li>
+                        <a class="nav-link" href="contact.html">聯絡我們</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">錯誤回報</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            class="fs-2 position-relative mt-3 me-5 ms-3">
+                            <i class="bi bi-person-lock"></i>
+                        </a>
+                        <a href="javascript:;" class="fs-2 position-relative mt-3 me-5 ms-1" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                            <i class="bi bi-cart "></i>
+                            <span
+                                class="fs-6 position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger p-1">5</span>
+                            <span class="visually-hidden">unread message</span>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item ms-3"><a href="index.html">首頁</a></li>
+                <li class="breadcrumb-item active" aria-current="page">音樂家小故事</li>
+            </ol>
+        </nav>
+
+        <div class="container">
+            <div class="row ">
+                <h2 class="col-12 text-center mb-5">音樂家小故事</h2>
+                <div class="col-3 col-md-3">
+                    <h4>音樂家列表</h4>
+                    <div class="col-md-3">
+                        <a href=""><img src="images/f-1.jpg" alt="" class="w-100"></a>
+                        <p><a href="">巴赫 Bach</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <a href=""><img src="images/f-2.jpg" alt="" class="w-100"></a>
+                        <p><a href="">莫札特 Mozart</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <a href=""><img src="images/f-3.jpg" alt="" class="w-100"></a>
+                        <p><a href="">貝多芬 Beethoven</a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-9 mb-1 d-flex flex-column">
+                    <h4>原來音樂大師是這樣！</h4>
+                    <div class="row ">
+                        <!-- flex-item #1 card-container-->
+                        <div class="col-12 d-flex gap-2">
+                            <div class="row  mt-5 mb-3">
+                                <!-- img container -->
+                                <div class="col-12 col-sm-6">
+                                    <img class="w-100" src="images/e-1.jpg" alt="">
+                                </div>
+                                <!-- content container -->
+                                <div class="col-12 col-sm-6">
+                                    <h5>音樂之父也是追星族</h5>
+                                    <p>被尊稱為「音樂之父」巴赫，是巴洛克時期的德國音樂巨匠，但是他在年輕的時候也有著自己崇拜的偶像。在巴赫還在阿恩施塔特的教堂里擔任管風琴師職務時，他利用假期步行了近300英里的路，只為去聽管風琴家布克斯特胡德的音樂會，結果花了四個月的時間，大大超出了假期的時長，結果被教堂解聘了。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 d-flex gap-2">
+                            <div class="row mt-5 mb-3">
+                                <!-- img container -->
+                                <div class="col-12 col-sm-6">
+                                    <img class="w-100" src="images/e-2.jpg" alt="">
+                                </div>
+                                <!-- content container -->
+                                <div class="col-12 col-sm-6">
+                                    <h5>天才竟然也這麼努力工作</h5>
+                                    <p>莫札特即便天賦異稟，也依然在創作上非常努力。他的日常作息：每早上6點起床，然後花一個小時穿衣打扮。作曲兩個小時，上課四個小時，下午1點是午飯時間，之後整個下午和貴族應酬，5、6點開始準備音樂會，沒有音樂會的時候就繼續作曲到9點，然後向未婚妻獻殷勤兩小時，晚上11點回家寫曲子，淩晨1點睡覺。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 d-flex gap-2">
+                            <div class="row mt-5 mb-3">
+                                <!-- img container -->
+                                <div class="col-12 col-sm-6">
+                                    <img class="w-100" src="images/e-3.jpg" alt="">
+                                </div>
+                                <!-- content container -->
+                                <div class="col-12 col-sm-6">
+                                    <h5>用60顆咖啡豆開啟作曲靈感的大師</h5>
+                                    <p>早上6點起床，貝多芬一定要喝下自己精心準備的咖啡 ──每杯都必須不多不少恰恰好有60顆咖啡豆
+                                        ──才開始長達8小時的創作；接著來頓有酒的晚餐；餐後散步2小時，口袋裡總是放著鉛筆和幾張樂譜。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="dashboard.html" class="needs-validation" novalidate>
+                            <h2 class="text-center">後台登入系統</h2>
+                            <div class="mb-3">
+                                <label for="account">帳號</label>
+                                <input type="text" id="account" name="account" class="form-control" placeholder="輸入帳號"
+                                    required>
+                                <div class="invalid-feedback">
+                                    必填欄位
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password">密碼</label>
+                                <input type="password" id="password" name="password" class="form-control"
+                                    placeholder="輸入密碼" required>
+                                <div class="invalid-feedback">
+                                    必填欄位
+                                </div>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">記住帳號</label>
+                            </div>
+                            <div class="text-end">
+                                <input class="btn btn-primary" type="submit" value="登入">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+        aria-controls="offcanvasExample">
+        Link with href
+    </a>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">
+        Button with data-bs-target
+    </button> -->
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">購物車</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    Some text as placeholder. In real life you can have the elements you have chosen. Like,
+                    text,
+                    images,
+                    lists, etc.
+                </div>
+                <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-bs-toggle="dropdown">
+                        前往結帳
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">結帳</a></li>
+                        <li><a class="dropdown-item" href="#">繼續逛</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-auto  bg-light" style="width: 100%; height: 20vh;">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="product-list.html" class="nav-link px-2 text-muted">Story</a></li>
+            <li class="nav-item"><a href="product.html" class="nav-link px-2 text-muted">Music Teach</a></li>
+            <li class="nav-item"><a href="faq.html" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">For educational use only © 2024 Our Music Classroom, Inc</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
